@@ -6,7 +6,7 @@ const ShowData = () => {
 
   const getData = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/trend");
+      const res = await axios.get("http://192.168.1.106:5000/trend");
       setData(res.data.data);
     } catch (error) {
       console.error(error.message);
